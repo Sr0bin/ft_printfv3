@@ -87,4 +87,4 @@ test: all
 
 ##############################
 
-.PHONY: all clean fclean re make_libft git test
+.PHONY: all clean fclean re make_libft test
