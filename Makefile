@@ -6,7 +6,7 @@
 #    By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/13 20:33:05 by rorollin          #+#    #+#              #
-#    Updated: 2025/01/20 15:20:12 by rorollin         ###   ########.fr        #
+#    Updated: 2025/01/29 11:10:34 by rorollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAME = libftprintf.a
 
 SOURCES_DIR = src
 
-SOURCES_NAME = ft_printf.c ft_print_d.c ft_print_p.c ft_print_X.c ft_print_x.c  \
+SOURCES_NAME = ft_printf.c ft_print_d.c ft_print_p.c ft_print_x_upper.c ft_print_x.c  \
 			   ft_print_i.c ft_print_s.c ft_print_u.c ft_print_c.c ft_parser.c ft_format.c
 
 SOURCES = $(addprefix $(SOURCES_DIR)/, $(SOURCES_NAME))

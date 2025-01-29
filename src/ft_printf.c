@@ -6,12 +6,11 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 15:48:08 by rorollin          #+#    #+#             */
-/*   Updated: 2025/01/20 15:18:11 by rorollin         ###   ########.fr       */
+/*   Updated: 2025/01/29 11:09:40 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdarg.h>
 
 int	ft_printf(const char *str, ...)
 {
