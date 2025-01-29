@@ -21,15 +21,12 @@ SOURCES_NAME = ft_printf.c ft_print_d.c ft_print_p.c ft_print_X.c ft_print_x.c  
 
 SOURCES = $(addprefix $(SOURCES_DIR)/, $(SOURCES_NAME))
 
-SOURCES_BONUS = 
 
 #OBJECTS#######################
 
 OBJ_DIR = obj
 
 OBJECTS = $(addprefix $(OBJ_DIR)/,$(SOURCES_NAME:.c=.o))
-
-OBJECTS_BONUS = $(addprefix $(OBJ_DIR)/,$(SOURCES_BONUS:.c=.o))
 
 #INCLUDES#######################
 
@@ -59,7 +56,7 @@ $(NAME): $(LIBFT)/$(LIBFT).a $(OBJECTS)
 	@echo "$(NAME) built succesfully."
 
 $(OBJ_DIR):
-	mkdir $@
+	@mkdir $@
 
 $(OBJ_DIR)/%.o: $(SOURCES_DIR)/%.c $(HEADERS) | $(OBJ_DIR) 
 	$(COMPILER) $(CFLAGS) $(INCLUDES) -c $< -o $@
