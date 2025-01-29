@@ -51,7 +51,7 @@ COMPILER = cc
 CFLAGS = -Wall -Wextra -Werror -ggdb
 ARCHIVER = ar
 
-all: git make_libft $(NAME)
+all: make_libft $(NAME)
 
 $(NAME): $(LIBFT)/$(LIBFT).a $(OBJECTS)
 	@cp $(LIBFT)/$(LIBFT).a $(NAME)	
@@ -63,9 +63,6 @@ $(OBJ_DIR):
 
 $(OBJ_DIR)/%.o: $(SOURCES_DIR)/%.c $(HEADERS) | $(OBJ_DIR) 
 	$(COMPILER) $(CFLAGS) $(INCLUDES) -c $< -o $@
-
-git: 
-	@git submodule update --init --remote --recursive
 
 make_libft:
 	@$(MAKE) -s -C $(LIBFT) bonus
